@@ -2,7 +2,7 @@
 
 * Студент: [Руслан Гайфутдинов](https://up.htmlacademy.ru/htmlcss/40/user/395443).
 * Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
-* Сайт: [Vjq проект Седона] (https://ruslan78rus.github.io/395443-sedona-40/)
+* Сайт: [Мой проект Седона] (https://ruslan78rus.github.io/395443-sedona-40/)
 
 ---
 
