@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <link rel="stylesheet" href="styles/styles.css">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
 </head>
 <body>
   <div class="container">
-    <header>
-      <a class="page-header-logo"><img src="images/logo.svg" alt="Логотип Седона" width="140" height="70"></a>
-      <nav class="navigation">
-        <ul class="navigation-list">
+    <header class="main-header">
+      <a class="main-header-logo"><img src="images/logo.svg" alt="Логотип Седона" width="140" height="70"></a>
+      <nav class="header-navigation">
+        <ul class="navigation-list nobullet">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="#" aria-current="page">Главная</a>
           </li>
@@ -22,76 +22,78 @@
           </li>
         </ul>
       </nav>
-      <ul class="user-list">
-        <li class="user-item">
+      <ul class="user-list nobullet">
+        <li class="user-item-search">
           <a class="user-search-link visually-hidden" href="#">Поиск</a>
         </li>
-        <li class="user-item">
+        <li class="user-item-favorites">
           <a class="user-favourites-link visually-hidden" href="#">Избранное</a>
-          <output>12</output>
+          <output class="number_of_favorites">12</output>
         </li>
       </ul>
-      <a class="header-link-button" href="#">Хочу сюда!</a>
+      <a class="button-link" href="#">Хочу сюда!</a>
     </header>
     <main>
       <section class="hero">
         <h1 class="visually-hidden">Город Седона</h1>
-        <img src="images/welcome.png" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks" width="458" height="352">
+        <p class="hero-welcome">
+          <img src="images/welcome.png" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks" width="458" height="352">
+        </p>
       </section>
       <section class="advantages">
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ul class="advantages-list">
+        <h2 class="heading-h2">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="main-paragraf">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ul class="advantages-list nobullet">
           <li class="advantages-item advantages-item-extended">
-            <h3>Настоящий городок</h3>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="images/advantages-image/advantages-1.jpg" alt="Вид на город Седона" width="800">
+            <h3 class="heading-h3 text-white">Настоящий городок</h3>
+            <p class="text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="images/advantages-image/advantages-1.jpg" alt="Вид на город Седона" width="800" height="385">
           </li>
-          <li class="advantages-item">
-            <h3>Небольшая площадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
+          <li class="advantages-item even">
+            <h3 class="heading-h3">Небольшая площадь</h3>
+            <p class="advantages-item-paragraf">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item">
-            <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="advantages-item odd">
+            <h3 class="heading-h3">Красивая дорога</h3>
+            <p class="advantages-item-paragraf">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-item">
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          <li class="advantages-item even">
+            <h3 class="heading-h3">Мало туристов</h3>
+            <p class="advantages-item-paragraf">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item advantages-item-extended">
-            <h3>Там есть мост Дьявола</h3>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img src="images/advantages-image/advantages-2.jpg" alt="Вид на мост Дьявола" width="800">
+            <h3 class="heading-h3 text-white">Там есть мост Дьявола</h3>
+            <p class="advantages-item-paragraf text-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="images/advantages-image/advantages-2.jpg" alt="Вид на мост Дьявола" width="800" height="385">
           </li>
         </ul>
       </section>
       <section class="service">
-        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p>Опытный персонал и качественное обслуживание!</p>
-        <ul class="service-list">
-          <li class="service-item">
-            <h3>Жильё</h3>
+        <h2 class="heading-h2">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="main-paragraf">Опытный персонал и качественное обслуживание!</p>
+        <ul class="service-list nobullet">
+          <li class="service-item odd">
+            <h3 class="heading-h3">Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="service-item">
-            <h3>Еда</h3>
+          <li class="service-item even">
+            <h3 class="heading-h3">Еда</h3>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="service-item">
-            <h3>Сувениры</h3>
+          <li class="service-item odd">
+            <h3 class="heading-h3">Сувениры</h3>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
       <section class="hotel-search">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="submit">Поиск гостиницы в Седоне</button>
+        <h2 class="heading-h2">Заинтересовались?</h2>
+        <p class="main-paragraf">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="submit" class="button-search-hotel">Поиск гостиницы в Седоне</button>
       </section>
-      <section class="subscribe">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe-main">
+        <h2 class="heading-h2 text-white">Подпишитесь на рассылку</h2>
+        <p class="main-paragraf text-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email">Укажите ваш e-mail</label>
           <input type="email" name="user-email" id="subscription-email" placeholder="Ваш e-mail" required>
@@ -100,15 +102,15 @@
       </section>
     </main>
     <footer>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="visually-hidden vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+      <ul class="social-list nobullet">
+        <li class="social-item vkontakte">
+          <a class="visually-hidden" href="https://vk.com/htmlacademy">Вконтакте</a>
         </li>
-        <li class="social-item">
-          <a class="visually-hidden telegramm" href="https://t.me/htmlacademy">Телеграмм</a>
+        <li class="social-item telegramm">
+          <a class="visually-hidden" href="https://t.me/htmlacademy">Телеграмм</a>
         </li>
-        <li class="social-item">
-          <a class="visually-hidden youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+        <li class="social-item youtube">
+          <a class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
         </li>
       </ul>
       <a href="tel:+78128121212">+7(812)812-12-12</a>
